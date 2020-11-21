@@ -1,6 +1,6 @@
 # N-PUZZLE-PROBLEM
 
-Here in the source code , we will be taking the input n ( as size of the n*n matrix ) .
+Here in the source code , we will be taking the input n ( as size of the n*n  matrix ) .
 After that we generate an start state n*n matrix and a goal state n*n matrix .
 
 We will be computing the heuristic value dynamically as the number of differing cells in the current state and goal state.
