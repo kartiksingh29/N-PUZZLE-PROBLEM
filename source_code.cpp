@@ -67,7 +67,7 @@ bool Check_Neighbour()
         swap(s[r][c], s[r][c+1]);
         int heuristicvalue =getheuristic();
         
-        if(heuristicvalue < hvalue){
+        if(heuristicvalue <= hvalue){
             choicecode = 1;
             hvalue = heuristicvalue;
         }
@@ -80,7 +80,7 @@ bool Check_Neighbour()
         swap(s[r][c], s[r+1][c]);
         int heuristicvalue = getheuristic();
 
-        if(heuristicvalue < hvalue){
+        if(heuristicvalue <= hvalue){
             choicecode = 2;
             hvalue = heuristicvalue;
         }
@@ -92,7 +92,7 @@ bool Check_Neighbour()
         swap(s[r][c], s[r][c-1]);
         int heuristicvalue = getheuristic();
         
-        if(heuristicvalue < hvalue){
+        if(heuristicvalue <= hvalue){
             choicecode = 3;
             hvalue = heuristicvalue;
         }
@@ -104,7 +104,7 @@ bool Check_Neighbour()
         swap(s[r][c], s[r-1][c]);
         int heuristicvalue = getheuristic();
         
-        if(heuristicvalue < hvalue){
+        if(heuristicvalue <= hvalue){
             choicecode = 4;
             hvalue = heuristicvalue;
         }
